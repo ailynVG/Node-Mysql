@@ -12,7 +12,7 @@ connection.connect(function(error){
       console.log('Conexion exitosa.');
    }
 });
-conexion.query('SELECT * FROM usuario', function(error, results, fields){
+connection.query('SELECT * FROM usuario', function(error, results, fields){
     if(error)
     throw error;
     results.forEach (result =>{
